@@ -12,5 +12,4 @@ Editing via UI
 
 * git branch --> Find existing branch
 * git checkout -b BRANCH NAME -> Create new branch
-  
-  Changes made
+* git checkout <branchname>  -> switch to existing branch 
