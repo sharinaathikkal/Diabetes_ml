@@ -1,0 +1,57 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<style>
+fieldset {
+  background-color: #eeeeee;
+}
+
+legend {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+}
+
+input {
+  margin: 5px;
+}
+</style>
+</head>
+<body bgcolor="pink">
+<h1><center>Diabetes Prediction</center></h1>
+<br>
+<form method="post" action="{{url_for('predict')}}">
+
+
+  <fieldset>
+    <legend>Fill the form please...</legend>
+    BMI<input type="text" name="bmi">
+    <br>
+    Glucose<input type="text" name="glucose">
+    <br>
+    Cholesterol<input type="text" name="cholesterol">
+    <br>
+    Height<input type="text" name="height">
+    <br>
+    Weight<input type="text" name="weight">
+    <br>
+    HDL_Cholesterol<input type="text" name="hdl_chol">
+    <br>
+    Systolic_Bp<input type="text" name="systolic_bp">
+    <br>
+    diastolic_bp<input type="text" name="diastolic_bp">
+    <br>
+    Chol_Hdl_Ratio<input type="text" name="chol_hdl_ratio">
+    <br>
+    Waist_Hip_Ratio<input type="text" name="waist_hip_ratio">
+    <br>
+
+    <button type="submit" class="btn">Predict</button>
+  </fieldset>
+</form>
+<br>
+<br>
+{{ prediction_text }}
+
+ </body>
+</html>
